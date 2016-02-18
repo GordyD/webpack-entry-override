@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Demonstration showing oddity when trying to override webpack entry with CLI when option is set as an array",
   "scripts": {
-    "build-with-entry": "webpack --entry ./lib/c.js", // This will result in a + b
-    "build": "webpack ./lib/c.js" // This will result in a + b + c
+    "build-ab": "webpack",
+    "build-ab-without-c": "webpack --entry ./lib/c.js --output-filename output-ab-without-c.js",
+    "build-ab-plus-c": "webpack ./lib/c.js --output-filename output-ab-plus-c.js"
   },
   "author": "Gordon Dent <gordonmdent@gmail.com>",
   "dependencies": {
