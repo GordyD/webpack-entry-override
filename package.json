@@ -1,0 +1,13 @@
+{
+  "name": "webpack-entry-override",
+  "version": "1.0.0",
+  "description": "Demonstration showing oddity when trying to override webpack entry with CLI when option is set as an array",
+  "scripts": {
+    "build-with-entry": "webpack --entry ./lib/c.js", // This will result in a + b
+    "build": "webpack ./lib/c.js" // This will result in a + b + c
+  },
+  "author": "Gordon Dent <gordonmdent@gmail.com>",
+  "dependencies": {
+    "webpack": "^1.12.13"
+  }
+}
